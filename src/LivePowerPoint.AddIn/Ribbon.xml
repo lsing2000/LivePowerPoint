@@ -1,0 +1,16 @@
+<customUI xmlns="http://schemas.microsoft.com/office/2009/07/customui" onLoad="Ribbon_Load">
+  <ribbon><tabs>
+    <tab id="tabLive" label="Live Data">
+      <group id="grpLive" label="Live Data">
+        <button id="btnSources" label="Connect / Sources" size="large" onAction="OnSources"/>
+        <button id="btnLink" label="Link Selected Table" size="large" onAction="OnLink"/>
+        <button id="btnMap" label="Map Columns" onAction="OnMap"/>
+        <button id="btnRefresh" label="Refresh Now" onAction="OnRefresh"/>
+        <toggleButton id="btnAuto" label="Auto Refresh" onAction="OnAuto" getPressed="GetAutoPressed"/>
+        <button id="btnUnlink" label="Unlink" onAction="OnUnlink"/>
+        <button id="btnDiag" label="Diagnostics" onAction="OnDiagnostics"/>
+        <button id="btnGate" label="Run Feasibility Gate" onAction="OnGate"/>
+      </group>
+    </tab>
+  </tabs></ribbon>
+</customUI>
